@@ -18,14 +18,14 @@ pipeline {
 											}
 								}			
 								steps {
-										echo 'Hello'
+										echo "Hello"
 									}
 								}		
 						stage ('Four') {
 										 parallel {
 												stage('Unit Test') {
 																	steps {
-																			echo 'Running Unit test...'
+																			echo "Running Unit test..."
 																	}
 												}
 												stage('Integration Test') {
@@ -43,7 +43,3 @@ pipeline {
 						}
 						}
 						}
-							
-										
-																			
-												
